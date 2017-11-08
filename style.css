@@ -1,11 +1,106 @@
 * {
-  background-color: #FCBB22;
+  background-color: #93F6FF;
   box-sizing: border-box;
 }
-#header {
 
+#header {
+  border: 2px solid black;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 100px;
+  background-image: url("assets/Sky-Background.jpg");
+  display: inline-block;
+}
+#zoologo {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+#header h1 {
+  font-size: 45px;
+  /*border: 2px solid black;*/
+  background: none;
+  font-family: 'Corben', cursive;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  padding-top: 35px;
+}
+#header h2 {
+  font-size: 25px;
+  /*border: 2px solid black;*/
+  background: none;
+  font-family: 'Corben', cursive;
+  text-align: center;
+  width: 600px;
+  margin: auto;
 }
 
-#menu {
-  display: inline;
+/*this animates the bird flying across the screen*/
+@-webkit-keyframes move
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 70%;
+    }
+}
+@keyframes move
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 70%;
+    }
+}
+
+
+a#rotator {
+    text-decoration: none;
+    padding-right: 0px;
+    left: 70%;
+    position: absolute;
+    background: none;
+    -webkit-animation: move 5s;
+    animation: move 5s;
+}
+
+a#rotator img {
+    margin-top: 25px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    border-radius: 15px;
+    background: none;
+    transition-duration: 1s;
+
+    }
+
+a#rotator img:hover {
+    box-shadow: 0 3px 15px #000;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: translate()
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li{
+  width: 25%;
+  border: 2px solid black;
+  float: left;
+  font-family: 'Corben', cursive;
+  size: 36px;
+  text-align: center;
+  margin-top: 0px;
 }
