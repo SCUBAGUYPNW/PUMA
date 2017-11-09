@@ -88,6 +88,7 @@ a#rotator img:hover {
     -ms-transform: rotate(360deg);
     transform: translate()
 }
+/*nav bar elements*/
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -108,15 +109,54 @@ a#rotator img:hover {
 #menu a {
   background-color: #02D305;
 }
+/*container for box1 and box2 content divs */
+.contentcontainer1 {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+#box1content {
+  width: 50%;
+  float:left;
+  text-align: center;
+}
+#box2content {
+  border: 1px solid green;
+  overflow: hidden;
+  text-align: center;
+
+}
+/*container for box3 and box4 content divs */
+.contentcontainer2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  overflow: hidden;
+}
+#box3content {
+  width: 50%;
+  float:left;
+  text-align: center;
+
+}
+#box4content {
+  text-align: center;
+  overflow: hidden;
+}
+/*CTA form that links to from.html so user can start observation*/
 #calltoaction {
-  margin-left: 30%;
+  display: inline-block;
+  margin-left: 40%;
 }
 #calltoaction fieldset {
   text-align: center;
   width: 50%;
 }
 #calltoaction  legend{
-  width: 50%;
   text-align: center;
 }
 #calltoaction  form {
