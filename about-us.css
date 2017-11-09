@@ -1,0 +1,12 @@
+body {
+  margin: 5px;
+}
+
+.bill {
+width: 200px;
+height: 200px;
+padding: 5px;
+float: right;
+position: fixed;
+
+}
