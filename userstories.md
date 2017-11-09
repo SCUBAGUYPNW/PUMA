@@ -18,5 +18,5 @@
 <h2> Organization (Tacoma Zoo)
 <ul>
 <li> Our zoo would like to be able to attract more citizen scientists to help gather data for Purple Martins
-<li> Our zoo would like to increase our environment responsibility by reducing paper data collection process by using technology
+<li> Our zoo would like to increase our environmental profile by reducing our current paper data collection process and begin using technology
 <li> Our zoo would like to expand the use of a technology tool to other zoo programs
