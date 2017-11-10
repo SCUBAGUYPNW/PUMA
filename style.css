@@ -1,8 +1,8 @@
 * {
-  background-color: #93F6FF;
+  background-color: #FFCA00;
   box-sizing: border-box;
 }
-
+/*header style*/
 #header {
   border: 2px solid black;
   border-top-right-radius: 20px;
@@ -10,9 +10,9 @@
   width: 100%;
   margin-bottom: 0px;
   padding-bottom: 75px;
-  background-image: url("assets/Sky-Background.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("assets/head-background-boat-sea.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: inline-block;
 }
 #header img {
@@ -22,7 +22,6 @@
   margin-left: 90px;
   margin-top: 40px;
   position: absolute;
-    /*float: left;*/
 }
 #header h1 {
   font-size: 45px;
@@ -35,15 +34,13 @@
   padding-top: 35px;
 }
 #header h2 {
-  font-size: 20px;
-  /*border: 2px solid black;*/
+  font-size: 16px;
   background: none;
   font-family: 'Corben', cursive;
   text-align: center;
   width: 600px;
   margin: auto;
 }
-
 /*this animates the bird flying across the screen*/
 @-webkit-keyframes move
 {
@@ -63,19 +60,16 @@
         left: 100%;
     }
 }
-
-
 a#rotator {
     text-decoration: none;
-    left: 75%;
-    margin-top: -110px;
+    left: 78%;
+    margin-top: -100px;
     margin-left: 70px;
     position: absolute;
     background: none;
     -webkit-animation: move 5s;
     animation: move 5s;
 }
-
 a#rotator img {
     margin-top: -100px;
     -webkit-transition: all 1s ease-in-out;
@@ -85,9 +79,7 @@ a#rotator img {
     border-radius: 15px;
     background: none;
     transition-duration: 1s;
-
     }
-
 a#rotator img:hover {
     box-shadow: 0 3px 15px #000;
     -webkit-transform: rotate(360deg);
@@ -96,44 +88,46 @@ a#rotator img:hover {
     -ms-transform: rotate(360deg);
     transform: translate()
 }
-
+/*nav bar elements*/
 #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
-
 #menu li{
   width: 25%;
   border: 2px solid black;
   float: left;
-  background-color: #02D305;
-  font-family: 'Corben', cursive;
+  background-color: #804D00;
+  font-family: helvetica;
   size: 36px;
   text-align: center;
   margin-top: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
 #menu a {
-  background-color: #02D305;
+  background-color: #804D00;
+  color: white;
 }
-#calltoaction {
-  margin-left: 30%;
+#datacontent h3{
+  text-align: center;
+  color: black;
 
 }
-#calltoaction fieldset {
-  text-align: center;
-  width: 50%;
+#datacontent {
+  min-width: 350px;
+  max-width: 500px;
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+  float: right;
 }
-#calltoaction  legend{
-  /*background-color: #02D305;*/
-  width: 50%;
-  text-align: center;
-}
-#calltoaction  form {
-  text-align: center;
-
+#thedataform {
+  min-width: 350px;
+  max-width: 500px;
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+  float: right
 }
