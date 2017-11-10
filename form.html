@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Corben" rel="stylesheet">
     <title>PUMA</title>
@@ -44,6 +45,14 @@
      <form id="puma-form">
           <fieldset>
             <legend>PUMA</legend>
+            <label for="box">Box Number:</label>
+            <select id="boxnumber">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <br>
               <input type="radio" name="gender" id="male"/>
               <label for="male">Male</label>
               <input type="radio" name="gender" id="female" />
@@ -54,14 +63,7 @@
               <input type="checkbox" name="firstyear" id="isyouth"/>
               <label for="firstyear">Check if you believe purple marlin is less than 1 year old:</label>
               <br>
-              <label for="box">Box Number:</label>
-              <select id="boxnumber">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <br>
+
               <label>Behaviors Observed:</label>
               <br>
               <input type="checkbox" name="landed" id="islanded"/>
@@ -80,22 +82,12 @@
               <input type="checkbox" name="juvenilereturns" id="isjuvenilereturns"/>
               <label for="juvenilereturns">Juvenile Returns</label>
               <br>
-              <label for="comments">Additional Comments:</label>
-              <input type="text" name="comments" />
-              <br>
               <button type="submit" name="button" class="createButton">Submit</button>
           </fieldset>
-
-   </div>
-
-    <div id="calltoaction">
-      <fieldset>
-        <legend>"Citizen Scientist"</legend>
-        <form action="form.html"> <p>When you are ready to begin an observation, enter your name and hit submit</p>
-        <input type="text" name="email" />
-        <input type="submit" name="subscribe" value="Start an Observation" />
-      </fieldset>
       </form>
-    </div>
+   </div>
+   <table id="puma-list"></table>
+         <script src="form.js"></script>
+
   </body>
 </html>
