@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="form.css">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Corben" rel="stylesheet">
     <title>PUMA</title>
@@ -45,6 +46,7 @@
 
    <div id="billsform">
      <form id="puma-form">
+
           <fieldset>
             <legend>PUMA</legend>
             <label for="box">Box Number:</label>
@@ -65,6 +67,7 @@
               <input type="checkbox" name="firstyear" id="isyouth"/>
               <label for="firstyear">Check if you believe purple marlin is less than 1 year old:</label>
               <br>
+
 
               <label>Behaviors Observed:</label>
               <br>
@@ -91,5 +94,29 @@
    <table id="puma-list"></table>
          <script src="form.js"></script>
 
+
+              <label>Behaviors Observed:</label>
+              <br>
+              <input type="checkbox" name="landed" id="islanded"/>
+              <label for="landed">Landed</label>
+              <input type="checkbox" name="perched" id="isperched"/>
+              <label for="perched">Perched</label>
+              <input type="checkbox" name="roosting" id="isroosting"/>
+              <label for="roosting">Roosting</label>
+              <input type="checkbox" name="foodcarrying" id="isfoodcarrying"/>
+              <label for="foodcarrying">Food Carrying</label>
+              <br>
+              <input type="checkbox" name="nestlingsobserved" id="isnestlingsobserved"/>
+              <label for="nestlingsobserved">Nestlings Observed</label>
+              <input type="checkbox" name="nestlingsheard" id="isnestlingsheard"/>
+              <label for="nestlingsheard">Nestlings Heard</label>
+              <input type="checkbox" name="juvenilereturns" id="isjuvenilereturns"/>
+              <label for="juvenilereturns">Juvenile Returns</label>
+              <br>
+              <button type="submit" name="button" class="createButton">Submit</button>
+          </fieldset>
+      </form>
+      <table id="puma-list"></table>
+      <script src="form.js"></script>
   </body>
 </html>
