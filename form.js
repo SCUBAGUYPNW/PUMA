@@ -19,7 +19,6 @@ function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foo
 
 function newInstanceSubmit(event) {
   event.preventDefault();
-  console.log(event.target.elements);
   var time = new Date();
   var box = boxnumber.value;
   var gender;
@@ -81,11 +80,10 @@ function newInstanceSubmit(event) {
   for (var key in observations[x]){
     var tdEl = document.createElement('td');
     tdEl.textContent = observations[x][key];
-    console.log(tdEl);
     trEl.appendChild(tdEl);
   }
-  console.log(trEl);
   pumaList.appendChild(trEl);
   x++;
+  document.getElementById('puma-form').reset();
 };
 document.getElementById('puma-form').addEventListener('submit', newInstanceSubmit);
