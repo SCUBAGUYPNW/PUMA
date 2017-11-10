@@ -109,6 +109,7 @@ a#rotator img:hover {
 #menu a {
   background-color: #804D00;
   color: white;
+  text-decoration: none;
 }
 /*container for box1 and box2 content divs */
 .contentcontainer1 {
@@ -117,79 +118,138 @@ a#rotator img:hover {
   margin-right: auto;
   width: 80%;
   overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+
 }
 #box1content {
   width: 50%;
   float:left;
   text-align: center;
   padding-right: 20px;
+  padding-left: 20px;
+  background-color: white;
+  margin-top: 20px;
 }
 #box1content img {
   float: left;
   border-radius: 20px;
   margin-right: 20px;
+  background-color: white;
 }
 #box1content p {
   text-align: left;
+  background-color: white;
+
+}
+#box1content h3 {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #804D00;
+  color: white;
 }
 #box2content {
-  /*border: 1px solid green;*/
   overflow: hidden;
   text-align: center;
   padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  margin-top: 20px;
 }
 #box2content img {
   float: left;
   border-radius: 20px;
   margin-right: 20px;
+  background-color: white;
 
 }
 #box2content p {
   text-align: left;
+  background-color: white;
 }
-
+#box2content h3 {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #804D00;
+  color: white;
+}
 /*container for box3 and box4 content divs */
 .contentcontainer2 {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 #box3content {
   width: 50%;
   float:left;
   text-align: center;
   padding-right: 20px;
+  background-color: white;
 }
 #box3content img {
   float: left;
   border-radius: 20px;
   margin-right: 20px;
+  background-color: white;
 }
 #box3content p {
   text-align: left;
+  background-color: white;
+}
+#box3content h3 {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #804D00;
+  color: white;
 }
 #box4content {
   overflow: hidden;
   text-align: center;
   padding-left: 20px;
+  background-color: white;
 }
 #box4content img {
   float: left;
   border-radius: 20px;
   margin-right: 20px;
+  background-color: white;
 }
 #box4content p {
   text-align: left;
+  background-color: white;
+}
+#box4content h3 {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #804D00;
+  color: white
 }
 /*CTA form that links to from.html so user can start observation*/
 #calltoaction {
   display: inline-block;
   margin-left: 20%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 #calltoaction fieldset {
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 #calltoaction  legend{
   text-align: center;
