@@ -1,11 +1,12 @@
 'use strict';
 
 var observations = [];
-function MakeInstance(time, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments) {
+var x = 0;
+function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns) {
   this.time = time;
+  this.box = box;
   this.gender = gender;
   this.isYouth = isYouth;
-  this.box = box;
   this.landed = landed;
   this.perched = perched;
   this.roosting = roosting;
@@ -13,7 +14,6 @@ function MakeInstance(time, gender, isYouth, box, landed, perched, roosting, foo
   this.nestlingsobserved = nestlingsobserved;
   this.nestlingsheard = nestlingsheard;
   this.juvenilereturns = juvenilereturns;
-  this.comments = comments;
   observations.push(this);
 }
 
@@ -21,6 +21,7 @@ function newInstanceSubmit(event) {
   event.preventDefault();
   console.log(event.target.elements);
   var time = new Date();
+  var box = boxnumber.value;
   var gender;
   if (male.checked){
     gender = 'Male';
@@ -31,41 +32,60 @@ function newInstanceSubmit(event) {
   if (unsure.checked){
     gender = 'Unsure';
   }
-  var isYouth = false;
+  var isYouth = '-';
   if (isyouth.checked){
-    isYouth = true;
+    isYouth = 'X';
   }
-  var box = boxnumber.value;
-  var landed = false;
+  var landed = '-';
   if (islanded.checked){
-    landed = true;
+    landed = 'X';
   }
-  var perched = false;
+  var perched = '-';
   if (isperched.checked){
-    perched = true;
+    perched = 'X';
   }
-  var roosting = false;
+  var roosting = '-';
   if (isroosting.checked) {
-    roosting = true;
+    roosting = 'X';
   }
-  var foodcarrying = false;
+  var foodcarrying = '-';
   if (isfoodcarrying.checked) {
-    foodcarrying = true;
+    foodcarrying = 'X';
   }
-  var nestlingsobserved = false;
+  var nestlingsobserved = '-';
   if (isnestlingsobserved.checked){
-    nestlingsobserved = true;
+    nestlingsobserved = 'X';
   }
-  var nestlingsheard = false;
+  var nestlingsheard = '-';
   if (isnestlingsheard.checked){
-    nestlingsheard = true;
+    nestlingsheard = 'X';
   }
-  var juvenilereturns = false;
+  var juvenilereturns = '-';
   if (isjuvenilereturns.checked){
-    juvenilereturns = true;
+    juvenilereturns = 'X';
   }
-  var comments = '';
 
-  new MakeInstance (time, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments);
+  new MakeInstance (time, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns);
+  var pumaList = document.getElementById('puma-list');
+  if (x === 0){
+    var trEl = document.createElement('tr');
+    var keys = ['Time', 'Box Number', 'Gender', 'Youngling', 'Landed', 'Perched', 'Roosting', 'Food Carrying', 'Nestlings Observed', 'Nestlings Heard', 'Juvenile Returns'];
+    for (var j = 0; j < keys.length; j++) {
+      var thEl = document.createElement('th');
+      thEl.textContent = keys[j];
+      trEl.appendChild(thEl);
+    }
+    pumaList.appendChild(trEl);
+  }
+  var trEl = document.createElement('tr');
+  for (var key in observations[x]){
+    var tdEl = document.createElement('td');
+    tdEl.textContent = observations[x][key];
+    console.log(tdEl);
+    trEl.appendChild(tdEl);
+  }
+  console.log(trEl);
+  pumaList.appendChild(trEl);
+  x++;
 };
 document.getElementById('puma-form').addEventListener('submit', newInstanceSubmit);

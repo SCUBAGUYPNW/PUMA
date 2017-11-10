@@ -8,6 +8,14 @@
     <form id="puma-form">
           <fieldset>
             <legend>PUMA</legend>
+            <label for="box">Box Number:</label>
+            <select id="boxnumber">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <br>
               <input type="radio" name="gender" id="male"/>
               <label for="male">Male</label>
               <input type="radio" name="gender" id="female" />
@@ -18,14 +26,7 @@
               <input type="checkbox" name="firstyear" id="isyouth"/>
               <label for="firstyear">Check if you believe purple marlin is less than 1 year old:</label>
               <br>
-              <label for="box">Box Number:</label>
-              <select id="boxnumber">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <br>
+
               <label>Behaviors Observed:</label>
               <br>
               <input type="checkbox" name="landed" id="islanded"/>
@@ -50,6 +51,7 @@
               <button type="submit" name="button" class="createButton">Submit</button>
           </fieldset>
       </form>
+      <table id="puma-list"></table>
       <script src="form.js"></script>
   </body>
 </html>
