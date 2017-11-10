@@ -116,11 +116,11 @@ a#rotator img:hover {
   margin-top: 75px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  margin-top: 50px;
+  width: 90%;
   overflow: hidden;
   background-color: white;
   border-radius: 10px;
-
 }
 #box1content {
   width: 50%;
@@ -143,10 +143,10 @@ a#rotator img:hover {
 
 }
 #box1content h3 {
+  width: 40%;
+  margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 0px;
-  margin-right: 0px;
   background-color: #804D00;
   color: white;
 }
@@ -170,10 +170,10 @@ a#rotator img:hover {
   background-color: white;
 }
 #box2content h3 {
+  width: 65%;
+  margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #804D00;
   color: white;
 }
@@ -181,11 +181,12 @@ a#rotator img:hover {
 .contentcontainer2 {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 95%;
   overflow: hidden;
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 #box3content {
   width: 50%;
@@ -205,10 +206,12 @@ a#rotator img:hover {
   background-color: white;
 }
 #box3content h3 {
+  width: 75%;
+  margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
+  /*padding-left: 20px;
+  padding-right: 20px;*/
   background-color: #804D00;
   color: white;
 }
@@ -229,6 +232,8 @@ a#rotator img:hover {
   background-color: white;
 }
 #box4content h3 {
+  width: 45%;
+  margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
   padding-left: 20px;
@@ -238,17 +243,19 @@ a#rotator img:hover {
 }
 /*CTA form that links to from.html so user can start observation*/
 #calltoaction {
-  display: inline-block;
-  margin-left: 20%;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 20%;
-  margin-right: auto;
-  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 30px;
   text-align: center;
 }
 #calltoaction fieldset {
+  border: 2px solid black;
+  border-radius: 20px;
   text-align: center;
+  padding-right: auto;
+  padding-left: auto;
   width: 100%;
 }
 #calltoaction  legend{
@@ -256,4 +263,7 @@ a#rotator img:hover {
 }
 #calltoaction  form {
   text-align: center;
+}
+#calltoaction  input {
+  background-color: white;
 }
