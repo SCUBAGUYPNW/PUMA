@@ -1,8 +1,8 @@
 'use strict';
 
 var observations = [];
-function MakeInstance(id, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments) {
-  this.id = id;
+function MakeInstance(time, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments) {
+  this.time = time;
   this.gender = gender;
   this.isYouth = isYouth;
   this.box = box;
@@ -20,7 +20,7 @@ function MakeInstance(id, gender, isYouth, box, landed, perched, roosting, foodc
 function newInstanceSubmit(event) {
   event.preventDefault();
   console.log(event.target.elements);
-  var id;
+  var time = new Date();
   var gender;
   if (male.checked){
     gender = 'Male';
@@ -31,41 +31,41 @@ function newInstanceSubmit(event) {
   if (unsure.checked){
     gender = 'Unsure';
   }
-  var isYouth;
+  var isYouth = false;
   if (isyouth.checked){
     isYouth = true;
   }
   var box = boxnumber.value;
-  var landed;
+  var landed = false;
   if (islanded.checked){
     landed = true;
   }
-  var perched;
+  var perched = false;
   if (isperched.checked){
     perched = true;
   }
-  var roosting;
+  var roosting = false;
   if (isroosting.checked) {
     roosting = true;
   }
-  var foodcarrying;
+  var foodcarrying = false;
   if (isfoodcarrying.checked) {
     foodcarrying = true;
   }
-  var nestlingsobserved;
+  var nestlingsobserved = false;
   if (isnestlingsobserved.checked){
     nestlingsobserved = true;
   }
-  var nestlingsheard;
+  var nestlingsheard = false;
   if (isnestlingsheard.checked){
     nestlingsheard = true;
   }
-  var juvenilereturns;
+  var juvenilereturns = false;
   if (isjuvenilereturns.checked){
     juvenilereturns = true;
   }
-  var comments;
+  var comments = '';
 
-  new MakeInstance (id, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments);
+  new MakeInstance (time, gender, isYouth, box, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns, comments);
 };
 document.getElementById('puma-form').addEventListener('submit', newInstanceSubmit);
