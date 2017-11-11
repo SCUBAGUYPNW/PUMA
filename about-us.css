@@ -115,32 +115,63 @@ a#rotator img:hover {
 
 #leftSide {
 position: absolute;
-left:15%;
-width: 450px;
+left:10%;
+width: 500px;
 height: 300px;
-margin-top: 30px;
-padding: 10px;
+margin-top: 60px;
+padding-left: 15px;
 }
+
 #billImage {
   float: left;
-  padding: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
-#billIntroduction {
+/*#billIntroduction {
   float: right;
+}*/
+#billProjectComments {
+  padding-bottom: 30px;
 }
+
 #brandonImage {
   float: left;
-  padding: 15px;
+  padding-right: 15px;
+
 }
 #brandonIntroduction {
   float: right;
+  padding-top: 0px;
 }
 
 #rightSide {
   position: absolute;
-right:15%;
-  width: 450px;
+right:10%;
+  width: 500px;
   height: 300px;
-  margin-top: 30px;
-  padding: 10px;
+  margin-top: 60px;
+  padding-left: 15px;
+}
+
+#dennisImage {
+  float: left;
+  padding-right: 15px;
+  padding-top: 15px;
+  }
+#dennisIntroduction {
+  float: right;
+  padding-top: 15px;
+  }
+  #dennisProjectComments {
+    padding-bottom: 70px;
+  }
+
+#mitchImage {
+  float: left;
+  padding-right: 15px;
+
+}
+#mitchIntroduction {
+  float: right;
+  padding-top: 60px;
 }
