@@ -1,6 +1,11 @@
 'use strict';
 
-var observations = [];
+var observations;
+if (localStorage.getItem('local observations')) {
+  observations = JSON.parse(localStorage.getItem('local observations'));
+} else {
+  observations = [];
+}
 var x = 0;
 function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns) {
   this.time = time;
@@ -19,7 +24,8 @@ function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foo
 
 function newInstanceSubmit(event) {
   event.preventDefault();
-  var time = new Date();
+  var date = new Date();
+  var time = date.toTimeString().substr(0,5) + ' ' + (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
   var box = boxnumber.value;
   var gender;
   if (male.checked){
@@ -77,13 +83,15 @@ function newInstanceSubmit(event) {
     pumaList.appendChild(trEl);
   }
   var trEl = document.createElement('tr');
-  for (var key in observations[x]){
+  for (var key in observations[observations.length - 1]){
     var tdEl = document.createElement('td');
-    tdEl.textContent = observations[x][key];
+    tdEl.textContent = observations[observations.length - 1][key];
     trEl.appendChild(tdEl);
   }
   pumaList.appendChild(trEl);
   x++;
   document.getElementById('puma-form').reset();
+  var lsObservations = JSON.stringify(observations);
+  localStorage.setItem('local observations', lsObservations);
 };
 document.getElementById('puma-form').addEventListener('submit', newInstanceSubmit);
