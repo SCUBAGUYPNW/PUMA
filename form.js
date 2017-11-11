@@ -25,10 +25,6 @@ function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foo
 function newInstanceSubmit(event) {
   event.preventDefault();
   var date = new Date();
-  // var minutes = date.getMinutes();
-  // if (minutes < 10) {
-  //   minutes = '0' + minutes;
-  // }
   var time = date.toTimeString().substr(0,5) + ' ' + (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
   var box = boxnumber.value;
   var gender;
