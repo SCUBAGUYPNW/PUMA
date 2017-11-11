@@ -1,0 +1,9 @@
+Four pictures
+Paragraph or two for each group member
+At the end of the project each group member will write another paragraph or two describing what they contributed to the project.
+
+Heading and menu across the top of the page consistent with all other pages.
+
+Links to whatever each member wants linked to (Github - Linked-In)
+
+Stretch - background image changes when mouse hovers over each member section.
