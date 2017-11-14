@@ -112,11 +112,16 @@ a#rotator img:hover {
   text-decoration: none;
 }
 
+em {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
 
 #leftSide {
 position: absolute;
 left:10%;
-width: 500px;
+width: 35%;
 height: 300px;
 margin-top: 60px;
 padding-left: 15px;
@@ -130,8 +135,15 @@ padding-left: 15px;
 /*#billIntroduction {
   float: right;
 }*/
+#billIntroduction {
+  text-align: justify;
+  /*text-justify: inter-word;*/
+  }
+
 #billProjectComments {
-  padding-bottom: 30px;
+  text-align: justify;
+  /*text-justify: inter-word;*/
+  padding-bottom: 70px;
 }
 
 #brandonImage {
@@ -140,14 +152,20 @@ padding-left: 15px;
 
 }
 #brandonIntroduction {
-  float: right;
-  padding-top: 0px;
+  text-align: justify;
+  /*text-justify: inter-word;*/
+  /*padding-top: 0px;*/
+}
+
+#brandonProjectComments {
+  text-align: justify;
+  /*text-justify: inter-word;*/
 }
 
 #rightSide {
   position: absolute;
 right:10%;
-  width: 500px;
+  width: 35%;
   height: 300px;
   margin-top: 60px;
   padding-left: 15px;
@@ -159,10 +177,13 @@ right:10%;
   padding-top: 15px;
   }
 #dennisIntroduction {
-  float: right;
-  padding-top: 15px;
+  text-align: justify;
+  /*text-justify: inter-word;*/
   }
+
   #dennisProjectComments {
+    text-align: justify;
+    text-justify: inter-word;
     padding-bottom: 70px;
   }
 
@@ -172,6 +193,11 @@ right:10%;
 
 }
 #mitchIntroduction {
-  float: right;
-  padding-top: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#mitchProjectComments {
+  text-align: justify;
+  text-justify: inter-word;
 }
