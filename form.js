@@ -1,5 +1,15 @@
 'use strict';
-
+var time = '';
+var box;
+var gender;
+var isYouth;
+var landed;
+var perched;
+var roosting;
+var foodcarrying;
+var nestlingsobserved;
+var nestlingsheard;
+var juvenilereturns;
 var observations;
 if (localStorage.getItem('local observations')) {
   observations = JSON.parse(localStorage.getItem('local observations'));
@@ -7,8 +17,9 @@ if (localStorage.getItem('local observations')) {
   observations = [];
 }
 var x = 0;
-function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns) {
+function MakeInstance(time, name, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns) {
   this.time = time;
+  this.name = name;
   this.box = box;
   this.gender = gender;
   this.isYouth = isYouth;
@@ -21,51 +32,50 @@ function MakeInstance(time, box, gender, isYouth, landed, perched, roosting, foo
   this.juvenilereturns = juvenilereturns;
   observations.push(this);
 }
-
 function newInstanceSubmit(event) {
   event.preventDefault();
+  console.log(event);
   var date = new Date();
-  var time = date.toTimeString().substr(0,5) + ' ' + (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
-  var box = boxnumber.value;
-  var gender;
+  time = date.toTimeString().substr(0,5) + ' ' + (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
+  box = boxnumber.value;
   if (male.checked){
     gender = 'Male';
   }
   if (female.checked){
     gender = 'Female';
   };
-  if (unsure.checked){
-    gender = 'Unsure';
+  if (juvenile.checked){
+    gender = 'Juvenile';
   }
-  var isYouth = '-';
+  isYouth = '-';
   if (isyouth.checked){
     isYouth = 'X';
   }
-  var landed = '-';
+  landed = '-';
   if (islanded.checked){
     landed = 'X';
   }
-  var perched = '-';
+  perched = '-';
   if (isperched.checked){
     perched = 'X';
   }
-  var roosting = '-';
+  roosting = '-';
   if (isroosting.checked) {
     roosting = 'X';
   }
-  var foodcarrying = '-';
+  foodcarrying = '-';
   if (isfoodcarrying.checked) {
     foodcarrying = 'X';
   }
-  var nestlingsobserved = '-';
+  nestlingsobserved = '-';
   if (isnestlingsobserved.checked){
     nestlingsobserved = 'X';
   }
-  var nestlingsheard = '-';
+  nestlingsheard = '-';
   if (isnestlingsheard.checked){
     nestlingsheard = 'X';
   }
-  var juvenilereturns = '-';
+  juvenilereturns = '-';
   if (isjuvenilereturns.checked){
     juvenilereturns = 'X';
   }

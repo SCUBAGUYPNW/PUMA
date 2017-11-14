@@ -25,21 +25,26 @@
         <li><a href="about-us.html">About us</a></li>
       </ul>
     </div>
+  <div id='container'>
     <div id="datacontent">
-      <h3>How to Fill out our data collection form</h3>
-      <ol>
-        <li> Identify and mark the sex of the purple martin (so you can indicate which box they go to)
-        </li>
-        <li> Check the nesting box the purple martin flys to</li>
-        <li> Click the boxes of all the behaviors observed. (multiple clicks are allowed) </li>
-        <li> Submit your observations</li>
-
+      <h3>View the Purple Martin's flightpath!</h3>
+      <video src="images/PUMP Migration.mp4"
+            poster="images/PUMA1.jpeg"
+            width="300px" height="300px"
+            preload="auto"
+            controls>
+            id="styled_video"
+            <p> The Purple Martins migration route</p>
+          </video>
     </div>
 
    <div id="billsform">
      <form id="puma-form">
        <fieldset>
             <legend>PUMA</legend>
+            <label for"name">Name: </label>
+            <input type="text" name="name" id="username">
+            <br>
             <label for="box">Box Number:</label>
             <select id="boxnumber">
               <option value="1">1</option>
@@ -68,11 +73,11 @@
               <label for="male">Male</label>
               <input type="radio" name="gender" id="female" />
               <label for="female">Female</label>
-              <input type="radio" name="gender" id="unsure"/>
-              <label for="unsure">Unsure</label>
+              <input type="radio" name="gender" id="juvenile"/>
+              <label for="juvenile">Juvenile</label>
               <br>
               <input type="checkbox" name="firstyear" id="isyouth"/>
-              <label for="firstyear">Check if you believe purple marlin is less than 1 year old:</label>
+              <label for="firstyear">First Year Adult</label>
               <br>
               <label>Behaviors Observed:</label>
               <br>
@@ -96,19 +101,8 @@
           </fieldset>
       </form>
    </div>
-
-
-      <div id="stuff">
-        <video src="images/PUMP Migration.mp4"
-          poster="images/PUMA1.jpeg"
-          width="300px" height="300px"
-          preload="auto"
-          controls>
-          id="styled_video"
-          <p> The Purple Martins migration route</p>
-        </video>
-      </div>
+ </div>
       <table id="puma-list"></table>
-      <script src="form.js"></script> -->
+      <script src="form.js"></script>
   </body>
 </html>
