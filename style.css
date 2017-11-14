@@ -24,7 +24,7 @@
   position: absolute;
 }
 #header h1 {
-  font-size: 45px;
+  font-size: 55px;
   background: none;
   font-family: 'Corben', cursive;
   color: #3700B2;
@@ -34,7 +34,7 @@
   padding-top: 35px;
 }
 #header h2 {
-  font-size: 16px;
+  font-size: 18px;
   background: none;
   font-family: 'Corben', cursive;
   text-align: center;
@@ -113,14 +113,55 @@ a#rotator img:hover {
 #menu a:hover {
   background-color: #25C500;
 }
-
-
+.dropdown {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+  background-color: #804D00;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dropbtn {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-family: helvetica;
+  background-color: #804D00;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  }
+.navbar a:hover, .dropdown:hover {
+    background-color: #804D00;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    opacity: 0.9;
+}
+.dropdown-content a {
+    float: left;
+    font-family: helvetica;
+    size: 36px;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /*container for box1 and box2 content divs */
 .contentcontainer1 {
-  margin-top: 75px;
+  margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   width: 80%;
   overflow: hidden;
   background-color: white;
