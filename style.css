@@ -11,8 +11,9 @@
   margin-bottom: 0px;
   padding-bottom: 75px;
   background-image: url("assets/head-background-boat-sea.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
   display: inline-block;
 }
 #header img {
@@ -185,6 +186,7 @@ a#rotator img:hover {
 #box1content p {
   text-align: left;
   background-color: white;
+  font-size: 18px;
 
 }
 #box1content h3 {
@@ -192,6 +194,7 @@ a#rotator img:hover {
   margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
   background-color: #804D00;
   color: white;
 }
@@ -213,12 +216,14 @@ a#rotator img:hover {
 #box2content p {
   text-align: left;
   background-color: white;
+  font-size: 18px;
 }
 #box2content h3 {
   width: 70%;
   margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
   background-color: #804D00;
   color: white;
 }
@@ -249,12 +254,14 @@ a#rotator img:hover {
 #box3content p {
   text-align: left;
   background-color: white;
+  font-size: 18px;
 }
 #box3content h3 {
   width: 70%;
   margin: auto;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
   background-color: #804D00;
   color: white;
 }
@@ -273,14 +280,14 @@ a#rotator img:hover {
 #box4content p {
   text-align: left;
   background-color: white;
+  font-size: 18px;
 }
 #box4content h3 {
   width: 68%;
   margin: auto;
   border-radius: 10px;
-  font-family: 'Montserrat', sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-family:  'Montserrat', sans-serif;
+  font-size: 22px;
   background-color: #804D00;
   color: white
 }
