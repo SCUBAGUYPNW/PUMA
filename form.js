@@ -11,6 +11,11 @@ var nestlingsobserved;
 var nestlingsheard;
 var juvenilereturns;
 var observations;
+var name;
+if (localStorage.getItem('user name')) {
+  name = localStorage.getItem('user name');
+  document.getElementById('username').value = name;
+}
 if (localStorage.getItem('local observations')) {
   observations = JSON.parse(localStorage.getItem('local observations'));
 } else {
