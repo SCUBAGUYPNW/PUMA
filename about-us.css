@@ -155,10 +155,16 @@ a#rotator img:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-em {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
+h3 {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  background-color: #804D00;
+  color: white;
+  margin-bottom: 20px;
 }
 
 #leftSide {
@@ -172,18 +178,23 @@ padding-left: 15px;
 
 #billImage {
   float: left;
-  padding-right: 15px;
-  padding-top: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
+  margin-top: 15px;
 }
 /*#billIntroduction {
   float: right;
 }*/
 #billIntroduction {
+  text-indent: 25px;
+  margin-top: 40px;
   text-align: justify;
   /*text-justify: inter-word;*/
   }
 
 #billProjectComments {
+  text-indent: 25px;
   text-align: justify;
   /*text-justify: inter-word;*/
   padding-bottom: 70px;
@@ -191,16 +202,20 @@ padding-left: 15px;
 
 #brandonImage {
   float: left;
-  padding-right: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
 
 }
 #brandonIntroduction {
+  text-indent: 25px;
   text-align: justify;
   /*text-justify: inter-word;*/
   /*padding-top: 0px;*/
 }
 
 #brandonProjectComments {
+  text-indent: 25px;
   text-align: justify;
   /*text-justify: inter-word;*/
 }
@@ -216,15 +231,20 @@ right:10%;
 
 #dennisImage {
   float: left;
-  padding-right: 15px;
-  padding-top: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
+  margin-top: 15px;
   }
 #dennisIntroduction {
+  text-indent: 25px;
+  margin-top: 40px;
   text-align: justify;
   /*text-justify: inter-word;*/
   }
 
   #dennisProjectComments {
+    text-indent: 25px;
     text-align: justify;
     text-justify: inter-word;
     padding-bottom: 70px;
@@ -232,15 +252,19 @@ right:10%;
 
 #mitchImage {
   float: left;
-  padding-right: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
 
 }
 #mitchIntroduction {
+  text-indent: 25px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 #mitchProjectComments {
+  text-indent: 25px;
   text-align: justify;
   text-justify: inter-word;
 }
