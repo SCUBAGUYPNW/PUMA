@@ -86,11 +86,11 @@ function newInstanceSubmit(event) {
     juvenilereturns = 'X';
   }
 
-  new MakeInstance (time, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns);
+  new MakeInstance (time, name, box, gender, isYouth, landed, perched, roosting, foodcarrying, nestlingsobserved, nestlingsheard, juvenilereturns);
   var pumaList = document.getElementById('puma-list');
   if (x === 0){
     var trEl = document.createElement('tr');
-    var keys = ['Time', 'Box Number', 'Gender', 'Youngling', 'Landed', 'Perched', 'Roosting', 'Food Carrying', 'Nestlings Observed', 'Nestlings Heard', 'Juvenile Returns'];
+    var keys = ['Time', 'Observer', 'Box Number', 'Gender', 'Youngling', 'Landed', 'Perched', 'Roosting', 'Food Carrying', 'Nestlings Observed', 'Nestlings Heard', 'Juvenile Returns'];
     for (var j = 0; j < keys.length; j++) {
       var thEl = document.createElement('th');
       thEl.textContent = keys[j];
@@ -108,6 +108,7 @@ function newInstanceSubmit(event) {
   x++;
   document.getElementById('puma-form').reset();
   document.getElementById('username').value = name;
+  localStorage.setItem('user name', name);
   var lsObservations = JSON.stringify(observations);
   localStorage.setItem('local observations', lsObservations);
 };
