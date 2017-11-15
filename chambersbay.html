@@ -1,66 +1,88 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="form.css">
-
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Corben" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Corben|Montserrat" rel="stylesheet">
     <title>PUMA</title>
   </head>
   <body>
-    <div id= "header" width="100%" heigth="400px">
-      <img src="assets/zoo-logo.jpg" heigth="10%" width="10%">
-      <h1>Purple Martin Swallow Migration</h1>
-        <h2>Start here to become a citizen scientist</h2>
+    <div id= "header" heigth="100%" width="100%">
+      <img src="assets/zoo-logo.jpg"  width="100px">
+      <h1>Spot the Swallows</h1>
+        <h2>Help monitor local nest box sites for the Purple Martins in the PNW</h2>
     </div>
     <a id="rotator">
-      <img src="assets/bird.png" heigth="50%" width="50%"></a>
+      <img src="assets/bird.png" heigth="50%" width="50%"</a>
     <div id="menu" width="90%" heigth="100px">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="form.html">Locations</a></li>
-        <li><a href="assets/Spot the Swallows FAQ 2014.pdf">FAQ</a></li>
-        <li><a href="about-us.html">About us</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <div class="dropdown">
+            <button class="dropbtn">NEST SITES</button>
+            <div class="dropdown-content">
+              <a href="form.html">PT. DEFIANCE</a>
+              <a href="titlow.html">TITLOW</a>
+              <a href="chambersbay.html">CHAMBERSBAY</a>
+            </div>
+          </div>
+        <li><a href="assets/Spot the Swallows FAQ 2014.pdf" target="_blank">FAQ</a></li>
+        <li><a href="about-us.html">DEVELOPMENT TEAM</a></li>
       </ul>
     </div>
+  <div id='container'>
     <div id="datacontent">
-      <h3>How to Fill out our data collection form</h3>
-      <ol>
-        <li> Identify and mark the sex of the purple martin (so you can indicate which box they go to)
-        </li>
-        <li> Check the nesting box the purple martin flys to</li>
-        <li> Click the boxes of all the behaviors observed. (multiple clicks are allowed) </li>
-        <li> Submit your observations</li>
-
+      <h3>View the Purple Martin's flightpath!</h3>
+      <video src="images/PUMP Migration.mp4"
+            poster="images/PUMA1.jpeg"
+            width="300px" height="300px"
+            preload="auto"
+            controls>
+            id="styled_video"
+            <p> The Purple Martins migration route</p>
+          </video>
     </div>
 
    <div id="billsform">
      <form id="puma-form">
-
-          <fieldset>
+       <fieldset>
             <legend>PUMA</legend>
+            <label for"name">Name: </label>
+            <input type="text" name="name" id="username">
+            <br>
             <label for="box">Box Number:</label>
             <select id="boxnumber">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
             </select>
             <br>
               <input type="radio" name="gender" id="male"/>
               <label for="male">Male</label>
               <input type="radio" name="gender" id="female" />
               <label for="female">Female</label>
-              <input type="radio" name="gender" id="unsure"/>
-              <label for="unsure">Unsure</label>
+              <input type="radio" name="gender" id="juvenile"/>
+              <label for="juvenile">Juvenile</label>
               <br>
               <input type="checkbox" name="firstyear" id="isyouth"/>
-              <label for="firstyear">Check if you believe purple marlin is less than 1 year old:</label>
+              <label for="firstyear">First Year Adult</label>
               <br>
-
-
               <label>Behaviors Observed:</label>
               <br>
               <input type="checkbox" name="landed" id="islanded"/>
@@ -83,18 +105,8 @@
           </fieldset>
       </form>
    </div>
-
-      <div id="stuff">
-        <video src="images/PUMP Migration.mp4"
-          poster="images/PUMA1.jpeg"
-          width="300px" height="300px"
-          preload="auto"
-          controls>
-          id="styled_video"
-          <p> The Purple Martins migration route</p>
-        </video>
-      </div>
+ </div>
       <table id="puma-list"></table>
-      <script src="form.js"></script> -->
+      <script src="form.js"></script>
   </body>
 </html>
