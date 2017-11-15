@@ -42,6 +42,7 @@ function newInstanceSubmit(event) {
   console.log(event);
   var date = new Date();
   time = date.toTimeString().substr(0,5) + ' ' + (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
+  name = document.getElementById('username').value;
   box = boxnumber.value;
   if (male.checked){
     gender = 'Male';
@@ -106,6 +107,7 @@ function newInstanceSubmit(event) {
   pumaList.appendChild(trEl);
   x++;
   document.getElementById('puma-form').reset();
+  document.getElementById('username').value = name;
   var lsObservations = JSON.stringify(observations);
   localStorage.setItem('local observations', lsObservations);
 };
