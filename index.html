@@ -49,13 +49,22 @@
     </div>
   </div>
   <div id="calltoaction">
-    <fieldset>
-      <legend>"Citizen Scientist"</legend>
-      <form action="form.html"> <p>When you are ready to begin an observation, enter your name and hit submit</p>
-      <input type="text" name="email" />
-      <input type="submit" name="subscribe" value="Start an Observation" />
-    </fieldset>
+    <form id="name-form">
+      <fieldset>
+      <legend>Citizen Scientist</legend>
+       <p>Select your observation site to get started!</p>
+       <input type="radio" name="observerlocation" id="chambers"/>
+       <label for="chambers">Chamber's Bay</label>
+       <input type="radio" name="observerlocation" id="pointdefiance" />
+       <label for="pointdefiance">Point Defiance</label>
+       <input type="radio" name="observerlocation" id="titlow"/>
+       <label for="titlow">Titlow Beach</label>
+      <br>
+      <br>
+      <button type="submit" name="button" class="createButton">Submit</button>
+      </fieldset>
     </form>
   </div>
+  <script src="index.js"></script>
   </body>
 </html>
