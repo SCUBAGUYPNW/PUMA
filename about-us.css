@@ -155,10 +155,16 @@ a#rotator img:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-em {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
+h3 {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  background-color: #804D00;
+  color: white;
+  margin-bottom: 20px;
 }
 
 #leftSide {
@@ -172,13 +178,16 @@ padding-left: 15px;
 
 #billImage {
   float: left;
-  padding-right: 15px;
-  padding-top: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
+  margin-top: 15px;
 }
 /*#billIntroduction {
   float: right;
 }*/
 #billIntroduction {
+  margin-top: 40px;
   text-align: justify;
   /*text-justify: inter-word;*/
   }
@@ -191,7 +200,9 @@ padding-left: 15px;
 
 #brandonImage {
   float: left;
-  padding-right: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
 
 }
 #brandonIntroduction {
@@ -207,7 +218,7 @@ padding-left: 15px;
 
 #rightSide {
   position: absolute;
-right:10%;
+  right:10%;
   width: 35%;
   height: 300px;
   margin-top: 60px;
@@ -216,23 +227,28 @@ right:10%;
 
 #dennisImage {
   float: left;
-  padding-right: 15px;
-  padding-top: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
+  margin-top: 15px;
   }
 #dennisIntroduction {
+    margin-top: 40px;
   text-align: justify;
   /*text-justify: inter-word;*/
   }
 
   #dennisProjectComments {
-    text-align: justify;
+      text-align: justify;
     text-justify: inter-word;
-    padding-bottom: 70px;
+    margin-bottom: 120px;
   }
 
 #mitchImage {
   float: left;
-  padding-right: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 15px;
 
 }
 #mitchIntroduction {
