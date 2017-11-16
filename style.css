@@ -322,5 +322,8 @@ a#rotator img:hover {
   padding-bottom: 6px;
 }
 #calltoaction  input {
-  background-color: ;
+  background-color: none;
+}
+#calltoaction label {
+  background: none;
 }
