@@ -209,3 +209,17 @@ video {
 #container {
   height: 20em;
 }
+h3 {
+  text-align: center;
+}
+fieldset {
+  /*height: 100%;*/
+}
+.clearfix:after {
+   clear: left;
+   content: ".";
+   display: block;
+   height: 0;
+   line-height: 0;
+   visibility: hidden;
+}
