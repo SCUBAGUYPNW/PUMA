@@ -1,5 +1,5 @@
 * {
-  background-color: #FFCA00;
+  background-color: #F2FABD;
   box-sizing: border-box;
 }
 /*header style*/
@@ -178,7 +178,7 @@ a#rotator img:hover {
 #billsform {
   width: 50%;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 25px;
   float: left;
   padding-left: 5%;
   margin-top: auto;
@@ -229,6 +229,7 @@ margin-right: 100px;
   margin-top: 10%;
   width: 45%;
   background-color: white;
+  /*position: absolute;*/
 }
 #puma-list:empty {
   display: none;
