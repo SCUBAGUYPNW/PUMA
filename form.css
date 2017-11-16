@@ -177,17 +177,17 @@ a#rotator img:hover {
 }
 #billsform {
   width: 50%;
-  height: 170%;
+  height: 100%;
   padding-top: 50px;
   float: left;
   padding-left: 5%;
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 1%;
 }
 #puma-form {
   width: 100%;
-  height: 100%;
-  background-image: url("assets/lined-paper.jpg");
+  /*height: 100%;*/
+  background-image: url("images/blue-rays.jpg");
   background-repeat:no-repeat;
   background-position:center;
   background-size:cover;
@@ -225,11 +225,31 @@ margin-right: 100px;
   border-style: ridge;
   border-radius: 10px;
   text-align: center;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 45%;
+  background-color: white;
+}
+#puma-list:empty {
+  display: none;
+}
+tr:nth-child(even) {
+  background-color: #CCC;
+}
+tr,td, th {
+  background: none;
 }
 video {
   width: 100%;
   height: auto;
 }
-#container {
-  height: 20em;
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
