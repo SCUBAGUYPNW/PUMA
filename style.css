@@ -298,8 +298,13 @@ a#rotator img:hover {
   margin: auto;
   margin-bottom: 30px;
   text-align: center;
+  background: none;
 }
 #calltoaction fieldset {
+  background-image: url("assets/lined-paper.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
   border: 3px solid black;
   border-radius: 20px;
   text-align: center;
@@ -307,12 +312,15 @@ a#rotator img:hover {
   padding-left: auto;
   width: 100%;
 }
+
 #calltoaction  legend{
   text-align: center;
 }
-#calltoaction  form {
+#calltoaction  form, p {
   text-align: center;
+  background: none;
+  padding-bottom: 6px;
 }
 #calltoaction  input {
-  background-color: white;
+  background-color: ;
 }
