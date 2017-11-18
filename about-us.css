@@ -112,11 +112,6 @@ a#rotator img:hover {
   text-decoration: none;
 }
 
-em {
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-}
 
 #leftSide {
 position: absolute;
@@ -143,7 +138,12 @@ padding-left: 15px;
 #billProjectComments {
   text-align: justify;
   /*text-justify: inter-word;*/
-  padding-bottom: 70px;
+  padding-bottom: 5px;
+}
+#billGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 65px;
 }
 
 #brandonImage {
@@ -160,6 +160,12 @@ padding-left: 15px;
 #brandonProjectComments {
   text-align: justify;
   /*text-justify: inter-word;*/
+}
+
+#brandonGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 5px;
 }
 
 #rightSide {
@@ -184,9 +190,13 @@ right:10%;
   #dennisProjectComments {
     text-align: justify;
     text-justify: inter-word;
-    padding-bottom: 70px;
+    padding-bottom: 5px;
   }
-
+#dennisGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 65px;
+}
 #mitchImage {
   float: left;
   padding-right: 15px;
@@ -200,4 +210,10 @@ right:10%;
 #mitchProjectComments {
   text-align: justify;
   text-justify: inter-word;
+}
+
+#mitchGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 5px;
 }
