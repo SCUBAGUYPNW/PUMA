@@ -32,7 +32,7 @@
   text-align: center;
   width: 75%;
   margin: auto;
-  padding-top: 65px;  
+  padding-top: 65px;
 }
 #header h2 {
   font-size: 18px;
@@ -259,4 +259,24 @@ padding-left: 15px;
 #mitchProjectComments {
   text-align: justify;
   text-justify: inter-word;
+}
+#mitchGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+#dennisGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 65px;
+}
+#brandonGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+#billGitHubLink {
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 65px;
 }
